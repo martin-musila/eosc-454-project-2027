@@ -25,5 +25,5 @@ def kernel_function(x_nodes, kernel_index, exponent, oscillation):
     """
     return (
         np.exp(kernel_index*exponent*x_nodes) *
-        np.cos(2*np.pi*kernel_index*oscillation*x_nodes)
+        np.cos(2*np.pi*kernel_index*oscillation*x_nodes + 1)
     )
